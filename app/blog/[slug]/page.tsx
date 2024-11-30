@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getBlogContent } from "../page";
+import { getBlogContent } from "@/lib/blog";
 
 type Props = {
   params: {

@@ -1,19 +1,6 @@
 import Link from 'next/link';
-const blogs = [
-    {
-      id: 1,
-      title: "我的第一篇博客",
-      date: "2024-03-20",
-      slug: "my-first-blog",
-      content: "啥叫开发的哈萨克..."
-    },
-    // 添加更多博客
-  ];
-export async function getBlogContent(slug: string) {
-    // 模拟网络缓慢
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    return blogs.find(blog => blog.slug === slug);
-}
+import { blogs } from '../data/blogs';
+
 
 export default function BlogList() {
   return (
@@ -21,7 +8,7 @@ export default function BlogList() {
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8">博客文章</h1>
         <div className="grid gap-6 max-w-3xl mx-auto">
-          {blogs.map((blog) => (
+          {blogs.map((blog: any) => (
             <Link 
               href={`/blog/${blog.slug}`} 
               key={blog.id}
@@ -36,3 +23,4 @@ export default function BlogList() {
     </main>
   );
 } 
+
