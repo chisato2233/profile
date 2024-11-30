@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🌟 Profile 🌟</h1>
   
-  <a href="https://vercel.com/new/clone?repository-url=https://github.com/chisato2233/profile/">
+  <a href="https://profile-chisato.vercel.app/">
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
   </a>
 
@@ -10,7 +10,21 @@
 
 ## 🚀 Getting Started
 
-First, run the development server:
+1. Clone the repository
+
+2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
