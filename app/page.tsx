@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { MagicCard } from "./components/MagicCard";
 import { DATA } from "./data/resume";
 import BlurIn from "@/components/ui/blur-in";

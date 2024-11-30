@@ -6,7 +6,7 @@ export function MagicCard() {
     <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl  ">
       <Meteors number={130} />
       <span className="pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-[8vw] sm:text-[6vw] md:text-[5vw]  font-semibold leading-none text-transparent dark:from-white dark:to-slate-900/10">
-        {DATA.name}'s Profile
+        {DATA.name}&apos;s Profile
       </span>
     </div>
   );
