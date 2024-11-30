@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import DockDemo from "@/app/components/Dock";
+import { ThemeProvider } from "next-themes";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { cn } from "@/lib/utils";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,11 +28,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={ cn(
+          geistSans.variable,
+          geistMono.variable,
+          "antialiased",
+          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+        )
+        
+        }
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <TooltipProvider delayDuration={0}>
+            {children}
+            <DockDemo />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
