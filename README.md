@@ -1,7 +1,7 @@
 <div align="center">
   <h1>🌟 Profile 🌟</h1>
   
-  <a href="https://vercel.com/new/clone?repository-url=https://github.com/yourusername/your-repo-name">
+  <a href="https://vercel.com/new/clone?repository-url=https://github.com/chisato2233/profile/">
     <img src="https://vercel.com/button" alt="Deploy with Vercel" />
   </a>
 

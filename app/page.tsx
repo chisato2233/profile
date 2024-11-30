@@ -2,7 +2,7 @@ import Image from "next/image";
 import { MagicCard } from "./components/MagicCard";
 import { DATA } from "./data/resume";
 import BlurIn from "@/components/ui/blur-in";
-import BlurFade from "@/Reference/src/components/magicui/blur-fade";
+import BlurFade from "@/components/ui/blur-fade";
 
 
 
