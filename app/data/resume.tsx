@@ -5,7 +5,7 @@ export const DATA = {
   name: "Chisato",
   initials: "DV",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
+  location: "Beijing , China",
   locationLink: "https://ditu.gaode.com/place/B000ABCR66",
   description:
     "Student from BUPT, A Game Developer, Software Engineer, Webside FrontEnd Developer and a Arknights Player!",
@@ -15,11 +15,12 @@ export const DATA = {
   skills: [
     "Unity",
     "C++",
+    "Next.js",
+    "React",
     "Unreal Engine",
     "C#",
+    "OpenGL",
     "Python",
-    "React",
-    "Next.js",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -38,7 +39,7 @@ export const DATA = {
       },
       Bilibili:{
         name: "Bilibili",
-        url: "https://space.bilibili.com/1666495633",
+        url: "https://space.bilibili.com/166649563",
         icon: Icons.bilibili,
 
         navbar: true,
@@ -68,127 +69,51 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "PVZ_Arknights",
+      href: "",
+      dates: "Sep 2024 - ",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "使用Unity引擎和《明日方舟》的解包素材制作的植物大战僵尸改版，导入成熟商业项目的海量素材，使用yaml序列化与C#反射配置角色信息，AddressBundle加载资产，UniTask + async/await 实现加载与游戏异步例程，jobsystem和对想池保证性能，以及各种策略模式、单例模式、继承、多态、泛型、事件驱动模式等等，以保证代码面对大规模资源时的灵活性与可扩展性",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Unity",
+        "C#",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          href: "https://space.bilibili.com/166649563",
+          icon: <Icons.bilibili className="size-3" />,
         },
       ],
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
+
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+      title: "Chisato Engine",
+      href:"https://github.com/chisato2233/Chisato",
+      dates : "Sep 2022 - Apr 2024",
+      description: 
+        "Chisato Engine 是一个从0开始实现的2D小引擎，目标在于简单快速的完成学校的游戏课程作业（）使用glfw与OpenGL，实现了一套易用的Windows消息处理系统，协程管理模型，正交与透视相机变换，2D图片显示和渲染，材质系统，自定义vertex shader和fragment shader，简单集成imgui",
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      vedio:"",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
+      title: "斗枢奇谭",
+      herf:"https://github.com/chisato2233/DouShuQiTan",
+      dates : "Dec 2023 - Apr 2024 ",
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
+        "用于参加cusga的rougelike游戏，使用Unity引擎制作场景、UI、构建了卡牌逻辑，场景和技巧，负责代码重构",
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      vedio:"",
     },
     {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
-    },
+      title: "cpp - async -library",
+      href:"https://github.com/chisato2233/cpp-async-library",
+      dates : "Sep 2022 - Apr 2024",
+    }
   ],
   hackathons: [
     {
