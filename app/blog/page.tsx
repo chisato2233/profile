@@ -1,8 +1,10 @@
 import Link from 'next/link';
-import { blogs } from '../data/blogs';
+import { getAllBlogs } from '@/lib/blog';
+
 
 
 export default function BlogList() {
+  const blogs = getAllBlogs();
   return (
     <main className="min-h-screen pt-20 pb-16">
       <div className="container mx-auto px-4">
