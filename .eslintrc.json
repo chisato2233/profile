@@ -3,6 +3,7 @@
   "rules": {
     "@typescript-eslint/no-unused-vars": "off",     // 关闭未使用变量的警告
     "@typescript-eslint/no-explicit-any": "off",    // 关闭 any 类型的警告
-    "@typescript-eslint/no-require-imports": "off" // 关闭 require 导入的警告
+    "@typescript-eslint/no-require-imports": "off", // 关闭 require 导入的警告
+    "@next/next/no-img-element": "off" // 关闭 img 标签的警告
   }
 }

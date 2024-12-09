@@ -57,7 +57,10 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		animation: {
-  			meteor: 'meteor 5s linear infinite'
+  			meteor: 'meteor 5s linear infinite',
+  			marquee: 'marquee var(--duration) infinite linear',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
+  			grid: 'grid 15s linear infinite'
   		},
   		keyframes: {
   			meteor: {
@@ -71,6 +74,30 @@ const config: Config = {
   				'100%': {
   					transform: 'rotate(215deg) translateX(-500px)',
   					opacity: '0'
+  				}
+  			},
+  			marquee: {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			grid: {
+  				'0%': {
+  					transform: 'translateY(-50%)'
+  				},
+  				'100%': {
+  					transform: 'translateY(0)'
   				}
   			}
   		}
