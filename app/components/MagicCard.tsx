@@ -51,7 +51,7 @@ export function MagicCard() {
   return (
     <div
       ref={cardRef}
-      className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl cursor-pointer"
+      className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border-1 backdrop-blur-sm bg-background/10 md:shadow-xl cursor-pointer"
     >
       {/* Meteors 层 */}
       <div className="absolute inset-0 pointer-events-none">
